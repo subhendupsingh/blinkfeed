@@ -23,19 +23,5 @@
 			"binding": "KV",
 			"id": "28886e91ff4c4d2cb0250def8745d3ff"
 		}
-	],
-	"queues": {
-		"consumers": [
-			{
-				"queue": "blinkfeed-queue",
-				"max_retries": 3
-			}
-		],
-		"producers": [
-			{
-				"queue": "blinkfeed-queue",
-				"binding": "Q"
-			}
-		]
-	}
+	]
 }

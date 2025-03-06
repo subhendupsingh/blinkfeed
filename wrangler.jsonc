@@ -24,10 +24,6 @@
 			"id": "28886e91ff4c4d2cb0250def8745d3ff"
 		}
 	],
-	"vars": {
-		"DB_URL": "libsql://blinkfeed-subhendupsingh.turso.io",
-		"DB_TOKEN": "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3NDEyNjc2NDgsImlkIjoiMzFiZGFlZjItNDFkZC00YjA1LWJiNGItMmJlZmFiMTlkMjc3In0.MRwQfOSxYT_VIcts-1fzBw7RgKCDL9tzbZhl15BLxO1VsuoFpo5n70Eqzza6-84hfAdZo7pInnIQJGgl6kcfCg"
-	},
 	"queues": {
 		"consumers": [
 			{

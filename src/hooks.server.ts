@@ -1,3 +1,4 @@
+import { DB_TOKEN, DB_URL } from '$env/static/private';
 import type { Bindings, DB } from '$lib/types/bindings';
 import type { Handle } from '@sveltejs/kit';
 import { drizzle } from 'drizzle-orm/libsql/web';
@@ -7,8 +8,8 @@ const initDb = async (env: Bindings | undefined) => {
     if(!env) throw new Error('Bindings not found');
     
     const db: DB = drizzle({ connection: {
-        url: env.DB_URL, 
-        authToken: env.DB_TOKEN
+        url: DB_URL, 
+        authToken: DB_TOKEN
     }});
 
     return db;

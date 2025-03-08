@@ -1,4 +1,4 @@
-import * as schema from '$lib/server/db/schema';
+import * as schema from '$lib/db/schema';
 import type { Queue } from '@cloudflare/workers-types';
 import type { LibSQLDatabase } from 'drizzle-orm/libsql';
 

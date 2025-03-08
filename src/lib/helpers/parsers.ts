@@ -9,11 +9,12 @@ export async function getFavicon(url: string): Promise<string> {
       root.querySelector('link[rel="icon"]')?.getAttribute('href') ||
       root.querySelector('link[rel="shortcut icon"]')?.getAttribute('href') ||
       `/favicon.ico`; // Fallback to default favicon
-    if (!url.endsWith('/')) {
-      return url + "/" + faviconLink;
-    }
 
-    return url + faviconLink;
+    if(faviconLink.indexOf("https://")<0){
+        return (url.endsWith('/') ? url : url + '/') + faviconLink;        
+    }  
+
+    return faviconLink;
   } catch (err) {
     console.log(`Error while fetching favicon: ${err}`);
     return ''; // Return empty string if favicon fetch fails

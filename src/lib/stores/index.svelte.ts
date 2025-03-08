@@ -1,0 +1,1 @@
+export const dashboardTitle = $state<{title: string}>({title: "Explore"});

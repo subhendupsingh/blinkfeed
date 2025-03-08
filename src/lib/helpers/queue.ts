@@ -2,7 +2,7 @@ import { dev } from "$app/environment";
 import { QSTASH_CURRENT_SIGNING_KEY, QSTASH_NEXT_SIGNING_KEY, QSTASH_TOKEN } from "$env/static/private";
 import { Client, Receiver, type PublishToUrlResponse } from "@upstash/qstash"
 
-const processUrl = dev ? 'https://23da-2401-4900-8838-78a9-eda6-d776-4e23-8768.ngrok-free.app/api/feed/process' : "";
+const processUrl = dev ? 'https://23da-2401-4900-8838-78a9-eda6-d776-4e23-8768.ngrok-free.app/api/feed/process' : "https://blinkfeed.storebud.workers.dev/api/feed/process";
 
 export const queue = {
     publish: async (params: { body: any, url?: string}): Promise<PublishToUrlResponse | null> => {
